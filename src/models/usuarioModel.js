@@ -25,7 +25,7 @@ function cadastrar(nome, email, senha, CPF) {
     // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
     //  e na ordem de inserção dos dados.
     var instrucao = `
-        INSERT INTO usuario (nome, email, senha) VALUES ('${nome}', '${email}', '${senha}', '${CPF}');
+        INSERT INTO usuario (nome, email, senha, CPF) VALUES ('${nome}', '${email}', '${senha}', '${CPF}');
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
